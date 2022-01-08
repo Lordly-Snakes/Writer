@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="10dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/body"
+        android:hint="TITLE"
+        android:padding="10dp"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/edText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/body"
+        android:gravity="top"
+        android:hint="text record"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/prior"
+        style="@style/buttonsStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/body"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/time_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/body"
+        android:text="TIME"
+        android:padding="10dp"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/ButOk"
+        android:onClick="toOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonsStyle"
+        android:text="@string/ok"
+        android:background="@drawable/rounded_button"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/ButDel"
+
+        android:textColor="@color/white"
+        android:onClick="toDEl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/buttonsStyle"
+        android:text="DELETE RECORD"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="#A10101"/>
+</LinearLayout>
